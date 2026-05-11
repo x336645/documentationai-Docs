@@ -1,0 +1,148 @@
+---
+title: Core Features and Use Cases
+description: Explore the essential features of the AI Academy, including courses, GPT robots, ebooks, and membership plans tailored for practical AI application.
+---
+
+## Overview
+
+Danny Chang's AI Academy offers a comprehensive platform for mastering AI skills with zero technical barriers. The slogan `{零技術門檻，AI技能輕鬆上手}` captures its essence: you can dive into AI without coding expertise. Key features include interactive courses, recorded videos, specialized GPT robots, ebooks, past course archives, and tiered membership plans.
+
+<Columns cols={2}>
+  <Card title="AI Courses" icon="book-open" href="/quickstart">
+    Access live and on-demand courses designed for beginners and experts.
+  </Card>
+  <Card title="GPT Robots" icon="bot" href="/authentication">
+    Use pre-built GPTs for business automation and educational tools.
+  </Card>
+  <Card title="Ebooks & Records" icon="file-text" href="/guides">
+    Download ebooks and review past course materials anytime.
+  </Card>
+  <Card title="Membership Plans" icon="users" href="/configuration">
+    Choose from free, elite, or educator plans to fit your needs.
+  </Card>
+</Columns>
+
+## AI Courses and Recorded Videos
+
+Start your AI journey with structured courses and recorded sessions. These resources cover foundational concepts to advanced applications, available via the platform dashboard.
+
+<Steps>
+  <Step title="Browse Courses" icon="search">
+    Navigate to the courses section and filter by topic or level.
+
+    ```
+    All AI courses are listed with previews and durations.
+    ```
+  </Step>
+  <Step title="Enroll and Watch" icon="play-circle">
+    Select a course, enroll if required, and stream recorded videos.
+
+    <Callout kind="tip">
+      Recorded videos include timestamps for quick navigation.
+    </Callout>
+  </Step>
+  <Step title="Track Progress" icon="check-circle">
+    Use the dashboard to monitor completion and download certificates.
+  </Step>
+</Steps>
+
+## GPT Robots for Business and Education
+
+Leverage custom GPT robots tailored for commercial and educational use. These tools automate tasks like content generation and lesson planning.
+
+<Tabs>
+  <Tab title="Business GPTs" icon="briefcase">
+    Deploy robots for marketing copy, customer support, and data analysis.
+
+    ```javascript
+    // Example: Generate marketing prompt
+    const prompt = "Create a social media post for AI academy enrollment.";
+    // Send to GPT robot endpoint
+    const response = await fetch('https://api.example.com/gpts/business', {
+      method: 'POST',
+      body: JSON.stringify({ prompt }),
+      headers: { 'Authorization': 'Bearer YOUR_TOKEN' }
+    });
+    ```
+
+    <Image
+      src="https://via.placeholder.com/600x300?text=Business+GPT+Demo"
+      alt="Business GPT robot interface"
+      width="600"
+      height="300"
+    />
+  </Tab>
+  <Tab title="Education GPTs" icon="graduation-cap">
+    Create personalized quizzes, explain concepts, and grade assignments.
+
+    ```python
+    # Example Python integration
+    import requests
+
+    prompt = "Explain neural networks to beginners."
+    response = requests.post(
+        'https://api.example.com/gpts/education',
+        json={'prompt': prompt},
+        headers={'Authorization': 'Bearer YOUR_TOKEN'}
+    )
+    print(response.json())
+    ```
+  </Tab>
+</Tabs>
+
+## Ebooks and Past Course Records
+
+Access a library of ebooks on AI topics and archives of previous courses. Download PDFs for offline reading or review session notes.
+
+<Expandable title="How to Access Ebooks" default-open="true">
+  1. Log in to your account.
+  2. Visit the ebooks section.
+  3. Select and download instantly—no extra fees for members.
+
+  Past records include slides, Q&A transcripts, and attendee notes.
+</Expandable>
+
+## Membership Plans
+
+Select a plan that matches your goals. Each offers unique benefits like priority access and exclusive content.
+
+<Tabs>
+  <Tab title="Free Member" icon="gift">
+    Basic access to introductory courses, blogs, and community forums.
+  </Tab>
+  <Tab title="Elite Member" icon="star">
+    Unlimited courses, GPT robots, ebooks, and live Q&A sessions.
+  </Tab>
+  <Tab title="AI Elite Educator" icon="award">
+    All elite features plus certification tools, custom GPT creation, and teaching resources.
+  </Tab>
+</Tabs>
+
+<Callout kind="info">
+  Upgrade anytime via the dashboard. Elite plans include personalized coaching.
+</Callout>
+
+## Real-World Use Cases
+
+Apply AI skills practically in marketing and entrepreneurship.
+
+<Columns cols={2}>
+  <Card title="Marketing Automation" icon="zap" horizontal>
+    Use GPTs to generate ad copy, analyze campaigns, and personalize emails—boost ROI by `{>30%}`.
+  </Card>
+  <Card title="Entrepreneurship Tools" icon="lightbulb" horizontal>
+    Build business plans, forecast trends, and automate operations with academy resources.
+  </Card>
+</Columns>
+
+```mermaid
+graph LR
+    A[Start Learning] --> B[Courses & Videos]
+    B --> C[GPT Robots]
+    C --> D[Apply in Business]
+    D --> E[Scale with Elite Plan]
+```
+
+<Callout kind="success">
+  Join thousands mastering AI. Start with a free course today!
+</Callout>
